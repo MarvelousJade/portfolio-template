@@ -1,54 +1,76 @@
 import { AboutMeData, Game, GameEngine, LinkImageSource, MediaType, Platform } from "./types";
 
 export const PersonalInfo: AboutMeData = {
-  name: "YOUR_NAME",
-  role: "YOUR_ROLE",
-  introduction: "SHORT_INTRODUCTION",
-  description: "TELL_ABOUT_YOURSELF",
+  name: "Shaoyu Fan",
+  role: "Game Developer",
+  introduction: "Game Developer | Unreal & SDL2 | Indie Game Creator",
+  description:
+    "Passionate game developer with a love for creating immersive experiences. Fell in love with game development after started learning coding.\n\n" +
+    "Specializes in 2D game mechanics, performance optimization, and creating engaging gameplay loops. Always eager to learn new technologies and collaborate with fellow developers.\n\n" +
+    "When not coding, I enjoy playing indie games, making music, and learning new technologies to challenge my creativity and technical skills.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
-  cvUri: `${process.env.PUBLIC_URL}/files/YOUR_CV.pdf`,
+  cvUri: `${process.env.PUBLIC_URL}/files/resume.pdf`,
   links: {
-    github: "https://github.com/NAME",
-    itchIO: "https://NAME.itch.io",
-    linkedIn: "https://www.linkedin.com/in/NAME",
-  }
+    github: "https://github.com/MarvelousJade",
+    itchIO: "https://marvelousjade.itch.io",
+    linkedIn: "https://linkedin.com/in/shaoyu-fan-b061772a3",
+  },
 };
 
 export const games: Game[] = [
   {
-    name: "GAME_NAME",
-    description: "GAME_DESCRIPTION",
-    genres: ["GAME_GENRE", "GAME_GENRE..."],
+    name: "Hollow Zero",
+    description:
+      "A 2D action game featuring fluid combat mechanics, advanced AI behavior, and polished game feel elements.",
+    genres: ["Action", "2D"],
     platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
+    engine: GameEngine.SDL2,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/YOUR_REPO" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/hollow-zero" },
+      { source: LinkImageSource.ItchIo, url: "https://marvelousjade.itch.io/hollow-zero" },
     ],
     media: [
-      { source: "/images/games/GAME_NAME/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/dQw4w9WgXcQ", type: MediaType.YouTube },
-      { source: "/images/games/GAME_NAME/Screenshot_2.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_3.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_4.png", type: MediaType.Image },
+      { source: "https://www.youtube.com/embed/tLpg1GxOdm8", type: MediaType.YouTube },
+      { source: "/images/games/hollow-zero/cover.png", type: MediaType.Image },
     ],
   },
   {
-    name: "GAME_NAME",
-    description: "GAME_DESCRIPTION",
-    genres: ["GAME_GENRE", "GAME_GENRE..."],
+    name: "Chicken Defense",
+    description:
+      "An arcade shooter where you defend your base from waves of invading chickens.",
+    genres: ["Arcade", "Shooter"],
     platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
+    engine: GameEngine.SDL2,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/YOUR_REPO" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/chicken-defense-game" },
+      { source: LinkImageSource.ItchIo, url: "https://marvelousjade.itch.io/chicken-defense" },
     ],
     media: [
-      { source: "/images/games/GAME_NAME/Screenshot_1.png", type: MediaType.Image },
-      { source: "https://www.youtube.com/embed/dQw4w9WgXcQ", type: MediaType.YouTube },
-      { source: "/images/games/GAME_NAME/Screenshot_2.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_3.png", type: MediaType.Image },
-      { source: "/images/games/GAME_NAME/Screenshot_4.png", type: MediaType.Image },
+      { source: "https://www.youtube.com/embed/ahL7-md2M_8", type: MediaType.YouTube },
     ],
-  }
+  },
+  {
+    name: "Souls-like",
+    description:
+      "A challenging action RPG inspired by Dark Souls, featuring precise combat mechanics, stamina management, and immersive world design built in Unreal Engine.",
+    genres: ["Action RPG", "Souls-like"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unreal,
+    links: [],
+    media: [
+      { source: "https://www.youtube.com/embed/UaqNMUt8g6w", type: MediaType.YouTube },
+    ],
+  },
+  {
+    name: "Black Wood",
+    description:
+      "TODO: replace with the real Black Wood description.",
+    genres: ["TBD"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unreal,
+    links: [],
+    media: [
+      { source: "https://www.youtube.com/embed/dQw4w9WgXcQ", type: MediaType.YouTube },
+    ],
+  },
 ];
