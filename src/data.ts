@@ -19,6 +19,18 @@ export const PersonalInfo: AboutMeData = {
 
 export const games: Game[] = [
   {
+    name: "BlackWood",
+    description:
+      "BlackWood is a first-person psychological horror game set in a small souvenir and antique shop. Built in Unreal Engine 5.6, it blends grounded retail-sim mechanics — serving customers, handling inventory, opening and closing the shop — with an unsettling narrative that unfolds across the workday. Visually it draws from the lo-fi, mundane-turned-sinister aesthetic of indie horror like Fears to Fathom.",
+    genres: ["Psychological Horror", "First-Person", "Retail Sim"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unreal,
+    links: [],
+    media: [
+      { source: "https://www.youtube.com/embed/y-OXwOIJv9I", type: MediaType.YouTube },
+    ],
+  },
+  {
     name: "Hollow Zero",
     description:
       "A 2D action game featuring fluid combat mechanics, advanced AI behavior, and polished game feel elements.",
@@ -59,18 +71,6 @@ export const games: Game[] = [
     links: [],
     media: [
       { source: "https://www.youtube.com/embed/UaqNMUt8g6w", type: MediaType.YouTube },
-    ],
-  },
-  {
-    name: "Black Wood",
-    description:
-      "TODO: replace with the real Black Wood description.",
-    genres: ["TBD"],
-    platforms: [Platform.Windows],
-    engine: GameEngine.Unreal,
-    links: [],
-    media: [
-      { source: "https://www.youtube.com/embed/dQw4w9WgXcQ", type: MediaType.YouTube },
     ],
   },
 ];
