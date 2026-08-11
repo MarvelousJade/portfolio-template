@@ -9,10 +9,12 @@ export enum Platform {
   Linux = "Linux",
   iOS = "iOS",
   Android = "Android",
+  Web = "Web",
 }
 
 export enum GameEngine {
   Unreal = "Unreal",
+  Unity = "Unity",
   SDL2 = "SDL2",
 }
 

@@ -31,6 +31,21 @@ export const games: Game[] = [
     ],
   },
   {
+    name: "Polarity Protocol",
+    description:
+      "A compact third-person combat game where magnetic anchors pull or push robots, physics props, and hostile projectiles through a neon containment arena. Fight through escalating encounters, redirect enemy fire, tear away shields, and launch enemies into plasma hazards by mastering red and blue polarities.",
+    genres: ["Action", "Third-Person", "Physics"],
+    platforms: [Platform.Windows, Platform.Web],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/PolarityProtocol" },
+      { source: LinkImageSource.ItchIo, url: "https://marvelousjade.itch.io/polarity-protocol" },
+    ],
+    media: [
+      { source: "https://www.youtube.com/embed/nLcjKIoZp8k", type: MediaType.YouTube },
+    ],
+  },
+  {
     name: "Hollow Zero",
     description:
       "A 2D action game featuring fluid combat mechanics, advanced AI behavior, and polished game feel elements.",
