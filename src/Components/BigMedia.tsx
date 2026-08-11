@@ -61,7 +61,7 @@ const BigMedia: React.FC<MediaItem> = ({ source, type }) => {
   };
 
   const getYouTubeEmbedUrl = (url: string) => {
-    return`${url}?autoplay=1&mute=1`;
+    return `${url}?autoplay=0`;
   };
 
   return (
@@ -70,7 +70,7 @@ const BigMedia: React.FC<MediaItem> = ({ source, type }) => {
         {type === MediaType.YouTube ? (
           <MediaIframe
             src={getYouTubeEmbedUrl(source)}
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         ) : (
